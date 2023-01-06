@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TicketApp.Interfaces;
 using TicketApp.Models;
 
 namespace TicketApp.Controllers
 {
+    [Route("api/events")]
+    [ApiController]
     public class EventController : ControllerBase
     {
         private readonly IEventRepository _eventRepository;
@@ -12,8 +15,8 @@ namespace TicketApp.Controllers
             _eventRepository = eventRepository;
         }
 
-
-        [HttpGet]
+        [Authorize]
+        [HttpGet(Name = "GetEvents")]
         public IActionResult GetEvents()
         {
             try
@@ -27,6 +30,9 @@ namespace TicketApp.Controllers
                 throw;
             }
         }
+
+
+        [Authorize]
         [HttpGet("{id}", Name = "EventById")]
         public IActionResult GetEvent(Guid Id)
         {
@@ -41,6 +47,8 @@ namespace TicketApp.Controllers
                 throw;
             }
         }
+
+        [Authorize]
 
         [HttpPost]
         public IActionResult CreateEvent(Event events)
@@ -58,21 +66,23 @@ namespace TicketApp.Controllers
             }
         }
 
+        [Authorize]
+
         [HttpPut]
-        public IActionResult UpdateEvent(Guid id, Event events) 
+        public IActionResult UpdateEvent(Guid id, Event events)
         {
             try
             {
-                if(events == null)
+                if (events == null)
                 {
                     return BadRequest();
                 }
-                if(!ModelState.IsValid)
+                if (!ModelState.IsValid)
                 {
                     return UnprocessableEntity(ModelState);
                 }
                 var eventsss = _eventRepository.GetEvent(id);
-                if(eventsss == null)
+                if (eventsss == null)
                 {
                     return NotFound();
                 }
@@ -86,7 +96,9 @@ namespace TicketApp.Controllers
             }
         }
 
-        [HttpDelete("{id")]
+        [Authorize]
+
+        [HttpDelete("{id}")]
         public IActionResult DeleteEvent(Guid id) 
         {
             var eventssss = _eventRepository.GetEvent(id);

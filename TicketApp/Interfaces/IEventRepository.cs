@@ -6,7 +6,7 @@ namespace TicketApp.Interfaces
     {
         IEnumerable<Event> GetAllEvent();
         void CreateEvent(Event events);
-        Event GetEvent(int id);
+        Event GetEvent(Guid id);
         void DeleteEvent(Event events);
         void Save();
         

@@ -80,3 +80,12 @@ C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\obj\Debug\net6.0\refint\Ticket
 C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\obj\Debug\net6.0\TicketApp.pdb
 C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\obj\Debug\net6.0\TicketApp.genruntimeconfig.cache
 C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\obj\Debug\net6.0\ref\TicketApp.dll
+C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Hp840g5\source\repos\TicketApp\TicketApp\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
